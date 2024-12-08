@@ -2,7 +2,7 @@ import React from 'react'
 
 const Category = () => {
     return (
-        <div className='max-w-[1240px] mx-auto h-[866px] bg-[#F0F0F0] rounded-[40px] mt-[80px]'>
+        <div className='max-w-[1240px] mx-auto h-[866px] bg-[#F0F0F0] rounded-[40px] my-[80px]'>
             <h1 className='text-[48px] font-bold uppercase h-[192px] flex items-center justify-center'>BROWSE BY dress STYLE</h1>
             <div className='flex flex-col gap-5 mb-[76px]'>
                 <div className='flex gap-5 justify-center'>
