@@ -33,7 +33,7 @@ const Page = () => {
         },
     ]);
 
-    const updateQuantity = (id: number, delta: any) => {
+    const updateQuantity = (id: number, delta : number) => {
         setCartItems(cartItems.map(item =>
             item.id === id ? { ...item, quantity: Math.max(item.quantity + delta, 1) } : item
         ));
