@@ -20,12 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     return (
         <div className="flex flex-col gap-4">
             {/* Product Image */}
-            <div
-                className="w-[295px] h-[298px] bg-[#F0EEED] rounded-[20px] bg-center bg-contain bg-no-repeat"
-                style={{
-                    backgroundImage: srcUrl ? `url(${srcUrl})` : "none",
-                }}
-            ></div>
+            <Image src={srcUrl} alt={title} height={295} width={295} priority className="w-[295px] h-[298px] bg-[#F0EEED] rounded-[20px] bg-center bg-contain bg-no-repeat" />
 
             {/* Product Details */}
             <div className="flex flex-col gap-2">

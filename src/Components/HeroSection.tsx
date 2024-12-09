@@ -15,7 +15,7 @@ const HeroSection = () => {
                         FIND CLOTHES THAT MATCHES YOUR STYLE
                     </h1>
                     <h3 className="text-[16px] text-[rgba(0,0,0,0.6)]">
-                        Browse through our diverse range of meticulously crafted garments, 
+                        Browse through our diverse range of meticulously crafted garments,
                         designed to bring out your individuality and cater to your sense of style.
                     </h3>
                     <button className="w-[210px] h-[52px] bg-black flex items-center justify-center font-medium text-white text-[16px] rounded-[62px]">
@@ -27,6 +27,7 @@ const HeroSection = () => {
                             { count: '200+', text: 'International Brands' },
                             { count: '2,000+', text: 'High-Quality Products' },
                             { count: '30,000+', text: 'Happy Customers' },
+
                         ].map((item, index) => (
                             <div key={index}>
                                 <span className="text-[40px] font-bold">{item.count}</span>
