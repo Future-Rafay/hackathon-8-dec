@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -101,7 +102,7 @@ const Footer = () => {
         </div>
         <div className="mb-[25px] max-w-[1240px] mx-auto h-0 border border-[rgba(0,0,0,0.2)] border-solid" />
         <div className="px-[100px] pb-[88px] border-t mt-5 py-5 flex items-center justify-between">
-          <p>© Shop.co 2000-2023</p>
+          <p>© Shop.co 2000-2023 | Made by <Link href='https://my-portfolio-animated-abdul-rafays-projects-87eac4f7.vercel.app/' target='_blank' className='underline hover:underline-offset-4'>Abdul Rafay</Link></p>
           <div className="flex space-x-4">
             {paymentMethods.map((src, idx) => (
               <Image key={idx} src={src} alt="Payment Method" width={46} height={30} />

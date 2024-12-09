@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopHeader = () => {
     return (
-        <div className='h-[38px] w-full bg-black text-white flex items-center justify-center relative'>
+        <div className='max-w-[1440px] h-[38px] mx-auto bg-black text-white flex items-center justify-center relative'>
             <p className='text-[14px] text-center'>
                 Sign up and get 20% off to your first order. <span className='underline underline-offset-4 font-medium'>Sign Up Now</span>
             </p>

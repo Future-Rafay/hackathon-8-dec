@@ -1,5 +1,58 @@
 import React from 'react'
 import ProductCard from './ProductCard'
+import { Product } from "@/types/product.types";
+
+export const topSellingData: Product[] = [
+  {
+    id: 5,
+    title: "Vertical Striped Shirt",
+    srcUrl: "/images/pic5.png",
+    gallery: ["/images/pic5.png", "/images/pic10.png", "/images/pic11.png"],
+    price: 232,
+    discount: {
+      amount: 0,
+      percentage: 20,
+    },
+    rating: 5.0,
+  },
+  {
+    id: 6,
+    title: "Courage Graphic T-shirt",
+    srcUrl: "/images/pic6.png",
+    gallery: ["/images/pic6.png", "/images/pic10.png", "/images/pic11.png"],
+    price: 145,
+    discount: {
+      amount: 0,
+      percentage: 0,
+    },
+    rating: 4.0,
+  },
+  {
+    id: 7,
+    title: "Loose Fit Bermuda Shorts",
+    srcUrl: "/images/pic7.png",
+    gallery: ["/images/pic7.png"],
+    price: 80,
+    discount: {
+      amount: 0,
+      percentage: 0,
+    },
+    rating: 3.0,
+  },
+  {
+    id: 8,
+    title: "Faded Skinny Jeans",
+    srcUrl: "/images/pic8.png",
+    gallery: ["/images/pic8.png"],
+    price: 210,
+    discount: {
+      amount: 0,
+      percentage: 0,
+    },
+    rating: 4.5,
+  },
+];
+
 
 const TopSelling = () => {
   return (
