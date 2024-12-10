@@ -1,8 +1,8 @@
-import Category from "@/components/Category";
-import HeroSection from "@/components/HeroSection";
-import NewArrival from "@/components/NewArrival";
-import Testimonials from "@/components/Testimonials";
-import TopSelling from "@/components/TopSelling";
+import Category from "@/Components/Category";
+import HeroSection from "@/Components/HeroSection";
+import NewArrival from "@/Components/NewArrival";
+import Testimonials from "@/Components/Testimonials";
+import TopSelling from "@/Components/TopSelling";
 
 import { Product } from "@/types/product.types";
 

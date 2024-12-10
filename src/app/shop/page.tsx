@@ -1,10 +1,10 @@
 import React from "react";
 import { Product } from "@/types/product.types";
-import FilterSidebar from '@/components/Filters';
-import ProductCard from '@/components/ProductCard';
+import FilterSidebar from '@/Components/Filters';
+import ProductCard from '@/Components/ProductCard';
 import { relatedProductData } from "@/app/page";
-import { topSellingData } from '@/components/TopSelling';
-import { newArrivalsData } from '@/components/NewArrival';
+import { topSellingData } from '@/Components/TopSelling';
+import { newArrivalsData } from '@/Components/NewArrival';
 import Image from "next/image";
 
 const data: Product[] = [
