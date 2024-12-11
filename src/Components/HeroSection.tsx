@@ -55,7 +55,7 @@ const HeroSection = () => {
             </div>
 
             {/* Brand Logos Section */}
-            <div className="h-[112px] w-full bg-black flex items-center justify-evenly">
+            <div className="h-28 w-full bg-black flex items-center justify-evenly">
                 {[
                     { src: '/images/brandsLogo/versace.png', width: 166, height: 33, alt: 'Versace' },
                     { src: '/images/brandsLogo/zara.png', width: 91, height: 38, alt: 'Zara' },
