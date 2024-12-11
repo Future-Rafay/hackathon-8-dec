@@ -56,7 +56,7 @@ export const reviewsData: Review[] = [
 const Testimonials = () => {
     return (
         <div className="max-w-[1240px] mx-auto px-4">
-            <h1 className="text-[48px] font-bold uppercase text-center">
+            <h1 className="text-[48px] font-bold uppercase">
                 Our Happy Customers
             </h1>
             <div className="flex gap-5 mt-10 overflow-x-auto" id="testimonials">

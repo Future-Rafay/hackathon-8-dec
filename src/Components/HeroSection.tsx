@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const HeroSection = () => {
@@ -18,9 +19,11 @@ const HeroSection = () => {
                         Browse through our diverse range of meticulously crafted garments,
                         designed to bring out your individuality and cater to your sense of style.
                     </h3>
-                    <button className="w-[210px] h-[52px] bg-black flex items-center justify-center font-medium text-white text-[16px] rounded-[62px]">
-                        Shop Now
-                    </button>
+                    <Link href='/shop'>
+                        <button className="w-[210px] h-[52px] bg-black flex items-center justify-center font-medium text-white text-[16px] rounded-[62px] hover:bg-black hover:text-white transition-all duration-300 ease-linear">
+                            Shop Now
+                        </button>
+                    </Link>
                     <div className="flex items-center gap-8 h-[90px]">
                         {/* Stats */}
                         {[

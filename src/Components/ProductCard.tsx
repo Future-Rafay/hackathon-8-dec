@@ -20,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     return (
         <div className="flex flex-col gap-4">
             {/* Product Image */}
-            <Image src={srcUrl} alt={title} height={295} width={295} priority className="w-[295px] h-[298px] bg-[#F0EEED] rounded-[20px] bg-center bg-contain bg-no-repeat" />
+            <Image src={srcUrl} alt={title} height={295} width={295} priority className="w-[295px] h-[298px] bg-[#F0EEED] rounded-[20px] bg-center bg-contain bg-no-repeat hover:scale-110 transition-all duration-200 ease-in" />
 
             {/* Product Details */}
             <div className="flex flex-col gap-2">

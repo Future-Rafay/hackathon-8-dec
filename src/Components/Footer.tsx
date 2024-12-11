@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { GrLinkedinOption } from "react-icons/gr";
 
 const Footer = () => {
   const paymentMethods = [
@@ -44,21 +45,9 @@ const Footer = () => {
         <h1 className="text-[36px] font-bold text-white w-[555px] leading-tight">
           STAY UP TO DATE ABOUT OUR LATEST OFFERS
         </h1>
-        <div className="flex flex-col gap-[14px]">
+        <div className="flex flex-col gap-[14px] w-[349px]">
           <div className="flex items-center gap-3 w-full h-[48px] rounded-[62px] px-[16px] py-[12px] bg-white shadow-sm">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="..."
-                fill="black"
-                fillOpacity="0.4"
-              />
-            </svg>
+            <Image src='/svgs/mailicon.svg' alt='Mail Icon' height={24} width={24} />
             <input
               type="text"
               placeholder="Enter your email address"

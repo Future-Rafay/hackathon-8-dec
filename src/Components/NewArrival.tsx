@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import { Product } from "@/types/product.types";
+import Link from "next/link";
 
 export const newArrivalsData: Product[] = [
   {
@@ -62,8 +63,10 @@ const NewArrival = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-      <button className="w-[218px] h-[52px] rounded-[62px] border border-[rgba(0,0,0,0.3)] text-[16px] font-medium flex items-center justify-center mt-[36px] mx-auto">
+      <button className="w-[218px] h-[52px] rounded-[62px] border border-[rgba(0,0,0,0.3)] text-[16px] font-medium flex items-center justify-center mt-[36px] mx-auto hover:bg-black hover:text-white transition-all duration-300 ease-linear">
+      <Link href='/shop'>
         View All
+        </Link>
       </button>
     </div>
   );
