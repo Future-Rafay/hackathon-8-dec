@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { GrLinkedinOption } from "react-icons/gr";
+// import { GrLinkedinOption } from "react-icons/gr";
 
 const Footer = () => {
   const paymentMethods = [
