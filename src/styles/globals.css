@@ -5,3 +5,6 @@
 #testimonials::-webkit-scrollbar {
   display: none;
 }
+h1 {
+  font-family: "integralCF.variable", sans-serif;
+}

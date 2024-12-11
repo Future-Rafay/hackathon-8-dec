@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { integralCF, satoshi } from "@/styles/fonts";
 
 const config: Config = {
   content: [
@@ -13,8 +14,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        integral: ['"IntegralCF.variable"', 'sans-serif'],
-        satoshi: ['"Satoshi"', 'sans-serif'],
+        integral: ['integralCF', 'sans-serif'],
+        satoshi: ['satoshi', 'sans-serif'],
       },
     },
   },
