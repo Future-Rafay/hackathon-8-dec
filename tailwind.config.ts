@@ -13,7 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        integral: ['"Integral CF"', 'sans-serif'],
+        integral: ['"IntegralCF.variable"', 'sans-serif'],
         satoshi: ['"Satoshi"', 'sans-serif'],
       },
     },

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/styles/globals.css";
 import TopHeader from "@/Components/TopHeader";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
+import { satoshi } from "@/styles/fonts";
 
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
       <head>
       <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
       </head>
-      <body>
+      <body className={satoshi.className}>
         <TopHeader />
         <Navbar />
         {children}

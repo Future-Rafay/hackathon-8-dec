@@ -5,14 +5,12 @@ import React from 'react';
 const HeroSection = () => {
     return (
         <div className="max-w-[1440px] mx-auto">
-            {/* Hero Section */}
             <div
                 className="h-[663px] w-full bg-[#F2F0F1] bg-cover flex items-center relative"
                 style={{ backgroundImage: 'url(/images/heroimage.png)' }}
             >
-                {/* Hero Text Content */}
                 <div className="ml-[100px] w-[600px] flex flex-col gap-[32px]">
-                    <h1 className="text-[64px] font-bold font-integral leading-[64px]">
+                    <h1  className="text-[64px] leading-[64px]">
                         FIND CLOTHES THAT MATCHES YOUR STYLE
                     </h1>
                     <h3 className="text-[16px] text-[rgba(0,0,0,0.6)]">
