@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <head>
+      <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+      </head>
       <body>
         <TopHeader />
         <Navbar />
