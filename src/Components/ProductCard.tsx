@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Product } from "@/types/product.types";
+import Link from "next/link";
 
 type ProductCardProps = {
     product: Product;
@@ -18,9 +19,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         : null;
 
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 shrink-0">
             {/* Product Image */}
-            <Image src={srcUrl} alt={title} height={295} width={295} priority className="w-[295px] h-[298px] bg-[#F0EEED] rounded-[20px] bg-center bg-contain bg-no-repeat hover:scale-110 transition-all duration-200 ease-in" />
+            <Link href='/product'><Image src={srcUrl} alt={title} height={295} width={295} priority className="w-[295px] h-[298px] bg-[#F0EEED] rounded-[20px] bg-center bg-contain bg-no-repeat hover:scale-110 transition-all duration-200 ease-in" /></Link>
 
             {/* Product Details */}
             <div className="flex flex-col gap-2">

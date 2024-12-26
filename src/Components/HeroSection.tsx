@@ -5,13 +5,13 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <div className="max-w-[1440px] mx-auto">
+        <div className="sm:w-full max-w-[1440px] mx-auto">
             <div
                 className="h-[663px] w-full bg-[#F2F0F1] bg-cover flex items-center relative"
                 style={{ backgroundImage: 'url(/images/heroimage.png)' }}
             >
-                <div className="ml-[100px] w-[600px] flex flex-col gap-[32px]">
-                    <h1 className={"text-[64px] font-bold leading-[64px]"}>
+                <div className="ml-[100px] xs:ml-0 w-[600px] flex flex-col gap-[32px]">
+                    <h1 className={"text-[64px] xs:text-[32px] font-bold leading-[64px]"}>
                         FIND CLOTHES THAT MATCHES YOUR STYLE
                     </h1>
                     <h3 className="text-[16px] text-[rgba(0,0,0,0.6)]">
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </div>
 
             {/* Brand Logos Section */}
-            <div className="h-28 w-full bg-black flex items-center justify-evenly">
+            <div className="h-28 w-full bg-black flex items-center sm:gap-4 justify-evenly">
                 {[
                     { src: '/images/brandsLogo/versace.png', width: 166, height: 33, alt: 'Versace' },
                     { src: '/images/brandsLogo/zara.png', width: 91, height: 38, alt: 'Zara' },
@@ -71,7 +71,8 @@ const HeroSection = () => {
                         alt={brand.alt}
                         width={brand.width}
                         height={brand.height}
-                        className="object-contain"
+                        className="object-contain sm:h-3"
+                        
                     />
                 ))}
             </div>

@@ -58,7 +58,7 @@ const TopSelling = () => {
   return (
     <div className="max-w-[1240px] mx-auto h-auto mt-[72px]">
       <h1 className="text-[48px] font-bold uppercase text-center mb-[55px]">top selling</h1>
-      <div className="flex gap-5 flex-wrap justify-center">
+      <div className="flex gap-5 overflow-x-auto justify-center">
         {topSellingData.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
