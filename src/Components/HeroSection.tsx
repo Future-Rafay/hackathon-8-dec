@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
+import { integralCF } from '@/styles/fonts';
+import { cn } from '@/lib/utils';
 
 const HeroSection = () => {
     return (
@@ -11,7 +12,12 @@ const HeroSection = () => {
                 style={{ backgroundImage: 'url(/images/heroimage.png)' }}
             >
                 <div className="ml-[100px] xs:ml-0 w-[600px] flex flex-col gap-[32px]">
-                    <h1 className={"text-[64px] xs:text-[32px] font-bold leading-[64px]"}>
+                    <h1
+                        className={cn([
+                            integralCF.className,
+                            "text-[64px] xs:text-[32px] font-bold leading-[64px]",
+                        ])}
+                    >
                         FIND CLOTHES THAT MATCHES YOUR STYLE
                     </h1>
                     <h3 className="text-[16px] text-[rgba(0,0,0,0.6)]">
@@ -72,7 +78,7 @@ const HeroSection = () => {
                         width={brand.width}
                         height={brand.height}
                         className="object-contain sm:h-3"
-                        
+
                     />
                 ))}
             </div>

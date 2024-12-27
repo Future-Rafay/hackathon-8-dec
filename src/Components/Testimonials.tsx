@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+import { integralCF } from '@/styles/fonts';
 import Image from 'next/image';
 import React from 'react';
 
@@ -56,7 +58,9 @@ export const reviewsData: Review[] = [
 const Testimonials = () => {
     return (
         <div className="max-w-[1240px] mx-auto px-4">
-            <h1 className="text-[48px] font-bold uppercase sm:text-[36px] sm:text-center">
+            <h1
+                className={cn([integralCF.className, "text-[48px] font-bold uppercase sm:text-[36px] sm:text-center"])}
+            >
                 Our Happy Customers
             </h1>
             <div className="flex gap-5 mt-10 overflow-x-auto" id="testimonials">
@@ -75,7 +79,7 @@ const Testimonials = () => {
                                         height={22.58}
                                         width={22.58}
                                         aria-label="star icon"
-                                       className='sm:w-[14px] sm:h-[14px]'
+                                        className='sm:w-[14px] sm:h-[14px]'
                                     />
                                 ))}
                             </div>

@@ -2,6 +2,8 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import { Product } from "@/types/product.types";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { integralCF } from "@/styles/fonts";
 
 export const topSellingData: Product[] = [
   {
@@ -57,7 +59,7 @@ export const topSellingData: Product[] = [
 const TopSelling = () => {
   return (
     <div className="max-w-[1240px] mx-auto h-auto mt-[72px]">
-      <h1 className="text-[48px] font-bold uppercase text-center mb-[55px]">top selling</h1>
+      <h1 className={cn([ integralCF.className,"text-[48px] font-bold uppercase text-center mb-[55px]"])}>top selling</h1>
       <div className="flex gap-5 overflow-x-auto justify-center">
         {topSellingData.map((product) => (
           <ProductCard key={product.id} product={product} />

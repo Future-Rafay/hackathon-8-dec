@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+import { integralCF } from '@/styles/fonts';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -42,7 +44,9 @@ const Footer = () => {
     <div className="max-w-[1440px] h-[589px] mx-auto">
       {/* Newsletter Section */}
       <div className="max-w-[1240px] mx-auto relative bottom-[-90px] h-[180px] py-[36px] px-[64px] bg-black rounded-[20px] flex items-center justify-between shadow-md">
-        <h1 className="text-[36px] font-bold text-white w-[555px] leading-tight">
+        <h1 className={cn([ integralCF.className,"text-[36px] font-bold text-white w-[555px] leading-tight"])}
+        
+        >
           STAY UP TO DATE ABOUT OUR LATEST OFFERS
         </h1>
         <div className="flex flex-col gap-[14px] w-[349px]">
@@ -64,7 +68,7 @@ const Footer = () => {
       <footer className="bg-[#F0F0F0] text-gray-600">
         <div className="max-w-[1240px] px-5 pt-[140px] pb-[50px] mx-auto flex flex-wrap justify-between gap-10">
           <div className="w-64">
-            <h1 className="text-3xl font-bold text-black">SHOP.CO</h1>
+            <h1 className={cn([ integralCF.className,"text-3xl font-bold text-black"])}>SHOP.CO</h1>
             <p className="mt-2 text-sm text-gray-500">
               We have clothes that suit your style and make you proud to wear them.
             </p>

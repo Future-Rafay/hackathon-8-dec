@@ -28,7 +28,7 @@ const Page = () => {
                             <Image src='/svgs/dropdownicon.svg' alt="Drop Down" height={16} width={16} className="transform rotate-180" />
                         </p>
                     </div>
-                    <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+                    <div className='grid grid-cols-3 md:grid-cols-1 gap-4'>
                         {data.map((product, index) => (
                             <ProductCard key={index} product={product} />
                         ))}

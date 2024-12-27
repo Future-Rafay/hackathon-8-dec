@@ -2,6 +2,8 @@ import React from "react";
 import ProductCard from "./ProductCard";
 import { Product } from "@/types/product.types";
 import Link from "next/link";
+import { integralCF } from "@/styles/fonts";
+import { cn } from "@/lib/utils";
 
 export const newArrivalsData: Product[] = [
   {
@@ -57,7 +59,7 @@ export const newArrivalsData: Product[] = [
 const NewArrival = () => {
   return (
     <div className="max-w-[1240px] mx-auto h-auto mt-[72px]">
-      <h1 className="text-[48px] font-bold uppercase text-center mb-[55px]">New Arrivals</h1>
+      <h1 className={cn([ integralCF.className,"text-[48px] font-bold uppercase text-center mb-[55px]"])}>New Arrivals</h1>
       <div className="flex gap-5 overflow-x-auto justify-center">
         {newArrivalsData.map((product) => (
           <ProductCard key={product.id} product={product} />

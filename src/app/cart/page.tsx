@@ -1,4 +1,6 @@
 "use client"
+import { cn } from '@/lib/utils';
+import { integralCF } from '@/styles/fonts';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
@@ -47,7 +49,7 @@ const Page = () => {
         <div className='max-w-[1240px] h-auto mx-auto border-t border-solid border-[rgba(0,0,0,0.3)]'>
             <div>
                 <div className='my-[24px]'>Home &gt; <span>Cart</span></div>
-                <h1 className='text-[40px] font-bold'>Your cart</h1>
+                <h1 className={cn([integralCF.className ,'text-[40px] font-bold'])}>Your cart</h1>
             </div>
             <div className='flex gap-[20px]  mt-[24px]'>
                 <div className='w-[715px] h-auto rounded-[20px] border-2 px-6 py-5'>

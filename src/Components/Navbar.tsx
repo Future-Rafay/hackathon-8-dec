@@ -1,3 +1,5 @@
+import { cn } from '@/lib/utils';
+import { integralCF } from '@/styles/fonts';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
@@ -7,7 +9,12 @@ import { IoSearch } from "react-icons/io5";
 const Navbar = () => {
     return (
         <div className='max-w-[1240px] mx-auto h-auto flex gap-[40px] items-center mt-[24px] mb-[30px]'>
-            <Link href='/' className='font-bold text-[32px]'>SHOP.CO</Link>
+            
+            <Link href='/' className={cn([
+                integralCF.className,
+                'font-bold text-[32px]'
+            ])} >SHOP.CO</Link>
+
             <ul className='flex gap-6 sm:hidden'>
                 <li className='flex items-center gap-1'><Link href='' >Shop</Link><IoChevronDown /></li>
                 <li><Link href='/shop' >On Sale</Link></li>
