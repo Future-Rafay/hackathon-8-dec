@@ -1,15 +1,10 @@
 import { cn } from '@/lib/utils';
 import { integralCF } from '@/styles/fonts';
-import Image from 'next/image';
 import React from 'react';
+import TestimonialCard from './TestimonialCard';
+import { Review } from '@/types/reviewcard.types';
 
-type Review = {
-    id: number;
-    user: string;
-    content: string;
-    rating: number;
-};
-
+// Mock data for testimonials
 export const reviewsData: Review[] = [
     {
         id: 1,
@@ -55,48 +50,20 @@ export const reviewsData: Review[] = [
     },
 ];
 
-const Testimonials = () => {
+const Testimonials: React.FC = () => {
     return (
         <div className="max-w-[1240px] mx-auto px-4">
             <h1
-                className={cn([integralCF.className, "text-[48px] font-bold uppercase sm:text-[36px] sm:text-center"])}
+                className={cn([
+                    integralCF.className,
+                    "text-[48px] font-bold uppercase sm:text-[36px] sm:text-center"
+                ])}
             >
                 Our Happy Customers
             </h1>
-            <div className="flex gap-5 mt-10 overflow-x-auto" id="testimonials">
+            <div className="grid grid-cols-3 sm:grid-cols-1 gap-5 mt-10 overflow-x-auto" id="testimonials">
                 {reviewsData.map((review) => (
-                    <div
-                        key={review.id}
-                        className="w-[400px] sm:w-[300px] sm:h-[180px] h-[240px] px-6 py-4 border border-[rgba(0,0,0,0.3)] rounded-[20px] shrink-0 flex flex-col justify-between"
-                    >
-                        <div>
-                            <div className="mb-[15px] sm:mb-[5px] flex">
-                                {Array.from({ length: review.rating }).map((_, i) => (
-                                    <Image
-                                        key={i}
-                                        src="/svgs/staricon.svg"
-                                        alt="star icon"
-                                        height={22.58}
-                                        width={22.58}
-                                        aria-label="star icon"
-                                        className='sm:w-[14px] sm:h-[14px]'
-                                    />
-                                ))}
-                            </div>
-                            <div className="flex gap-2 items-center mb-2">
-                                <h3 className="font-semibold text-lg sm:text-sm">{review.user}</h3>
-                                <Image
-                                    src="/svgs/tickicon.svg"
-                                    alt="verified tick icon"
-                                    height={24}
-                                    width={24}
-                                    aria-label="verified tick icon"
-                                    className='sm:w-[14px] sm:h-[14px]'
-                                />
-                            </div>
-                            <p className="text-[16px] text-[rgba(0,0,0,0.6)] sm:text-[12px]">{review.content}</p>
-                        </div>
-                    </div>
+                    <TestimonialCard key={review.id} review={review} />
                 ))}
             </div>
         </div>
@@ -104,3 +71,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

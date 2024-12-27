@@ -4,7 +4,9 @@ import { integralCF } from '@/styles/fonts'
 import Image from 'next/image'
 import React from 'react'
 import { relatedProductData } from '../page'
-import Testimonials from '@/Components/Testimonials'
+import Testimonials, { reviewsData } from '@/Components/Testimonials'
+import Link from 'next/link'
+import TestimonialCard from '@/Components/TestimonialCard'
 
 const page = () => {
   return (
@@ -176,13 +178,20 @@ const page = () => {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-1'>
-          <Testimonials />
+        <div className='mb-[64px] mt-[36px]'>
+          <div className='grid gap-5 grid-cols-2 md:grid-cols-1'>
+            {reviewsData.map((review) => (
+              <TestimonialCard key={review.id} review={review} />
+            ))}
+          </div>
+          <button className="w-[218px] h-[52px] rounded-[62px] border border-[rgba(0,0,0,0.3)] text-[16px] font-medium flex items-center justify-center mt-[36px] mx-auto hover:bg-black hover:text-white transition-all duration-300 ease-linear">
+            
+              Load More Reviews
+            
+          </button>
         </div>
 
-
       </div>
-
 
       {/* more products  */}
       <div className=''>
@@ -193,10 +202,6 @@ const page = () => {
           ))}
         </div>
       </div>
-
-
-
-
     </div>
   )
 }
