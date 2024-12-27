@@ -4,8 +4,7 @@ import { integralCF } from '@/styles/fonts'
 import Image from 'next/image'
 import React from 'react'
 import { relatedProductData } from '../page'
-import Testimonials, { reviewsData } from '@/Components/Testimonials'
-import Link from 'next/link'
+import  { reviewsData } from '@/Components/Testimonials'
 import TestimonialCard from '@/Components/TestimonialCard'
 
 const page = () => {
