@@ -48,7 +48,7 @@ const Page = () => {
     return (
         <div className='max-w-[1240px] h-auto mx-auto border-t border-solid border-[rgba(0,0,0,0.3)]'>
             <div>
-                <div className='my-[24px]'>Home &gt; <span>Cart</span></div>
+            <div className='my-[24px] flex gap-2'><span className="text-black/60">Home</span> <Image src='/svgs/dropdownicon.svg' alt="Drop Down" height={16} width={16} className="transform rotate-90 text-black/60" /><span>Cart</span></div>
                 <h1 className={cn([integralCF.className ,'text-[40px] font-bold'])}>Your cart</h1>
             </div>
             <div className='flex gap-[20px]  mt-[24px]'>

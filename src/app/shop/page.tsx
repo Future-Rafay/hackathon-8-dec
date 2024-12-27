@@ -16,7 +16,7 @@ const data: Product[] = [
 const Page = () => {
     return (
         <div className='max-w-[1240px] mx-auto border-t-2 flex flex-col'>
-            <div className='my-[24px]'>Home &gt; <span>Cart</span></div>
+            <div className='my-[24px] flex gap-2'><span className="text-black/60">Home</span> <Image src='/svgs/dropdownicon.svg' alt="Drop Down" height={16} width={16} className="transform rotate-90 text-black/60" /><span>Shop</span></div>
             <div className='flex gap-5'>
                 <FilterSidebar />
                 <div className='w-[925px] h-auto flex flex-col'>
