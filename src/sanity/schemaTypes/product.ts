@@ -21,9 +21,9 @@ export default defineType({
       type: "number",
     },
     {
-      name: "imageUrl",
-      title: "Image URL",
-      type: "url", // URL type to store the image link
+      name: "image",
+      title: "Image",
+      type: "image",
     },
     {
       name: "category",
