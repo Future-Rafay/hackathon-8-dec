@@ -53,7 +53,9 @@ async function importData() {
     for (const product of products) {
       console.log(`Processing product: ${product.name}`);
 
-   
+      // Declare `imageRef` inside the loop
+      let imageRef = null;
+
       if (product.imageUrl) {
         imageRef = await uploadImageToSanity(product.imageUrl);
       }
@@ -63,7 +65,7 @@ async function importData() {
         name: product.name,
         description: product.description,
         price: product.price,
-        imageUrl: imageRef
+        image: imageRef
           ? {
               _type: "image",
               asset: {
