@@ -231,7 +231,6 @@
 // export default ProductDetailPage
 
 
-
 import ProductDetailClient from "@/Components/ProductDetailsClient";
 import { getProductById } from "@/lib/fetchDataFromSanity";
 

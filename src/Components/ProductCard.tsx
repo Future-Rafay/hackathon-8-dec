@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
 
-interface ProductCardProps {
+export interface ProductCardProps {
   product: {
     _id: string;
     name: string;
