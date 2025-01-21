@@ -18,7 +18,7 @@ export default function FilterSidebar() {
     };
 
     return (
-        <div className="w-72 bg-white border rounded-[20px] shadow-lg p-4 space-y-6">
+        <div className="w-72 h-auto bg-white border rounded-[20px] shadow-lg p-4 space-y-6">
             {/* Filters Header */}
             <div className="flex items-center justify-between">
                 <h2 className="text-xl font-semibold">Filters</h2>
