@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   if (!product) {
     return (
-      <div className="w-[295px] h-[298px] bg-gray-100 rounded-xl text-xl flex items-center justify-center shadow-md">
+      <div className="w-[295px] h-[298px] bg-gray-100 rounded-xl text-xl flex items-center justify-center shadow-md shrink-0">
         Product data is missing!
       </div>
     );
@@ -37,7 +37,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     : price;
 
   return (
-    <div className="group flex flex-col gap-4 w-[295px] bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform  hover:shadow-xl">
+    <div className="group flex flex-col gap-4 w-[295px] shrink-0 bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform  hover:shadow-xl">
       {/* Product Image */}
       <div className="relative w-full h-[298px] bg-gray-100">
         <Link href={`/product/${_id}`}>
